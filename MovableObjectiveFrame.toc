@@ -1,0 +1,8 @@
+## Interface: 90205
+## Title: Movable Objectives Frame
+## Notes: Allows the Objective Frame to be resizeable and movable.
+## Author: Keyboardturn
+## Version: 0.0.2
+## SavedVariables: MofDB
+
+MovableObjectiveFrame.lua

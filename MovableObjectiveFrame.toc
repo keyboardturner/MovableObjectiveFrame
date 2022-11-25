@@ -1,8 +1,8 @@
-## Interface: 100000
+## Interface: 100002
 ## Title: Movable Objectives Frame
 ## Notes: Allows the Objective Frame to be resized.
 ## Author: Keyboardturn
-## Version: 0.0.3
+## Version: 0.0.4
 ## SavedVariables: MofDB
 
 MovableObjectiveFrame.lua

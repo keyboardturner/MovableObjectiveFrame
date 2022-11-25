@@ -1,5 +1,5 @@
 local defaultsTable = {
-	ObjectiveTracker = {scale = 100,},
+	ObjectiveTracker = {scale = 1,},
 }
 
 local ObjTrackerOptionsPanel = CreateFrame("FRAME", "ObjTrackPanel");

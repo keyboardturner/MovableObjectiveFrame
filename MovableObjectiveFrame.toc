@@ -1,8 +1,9 @@
-## Interface: 100007
+## Interface: 100100
 ## Title: Movable Objectives Frame
 ## Notes: Allows the Objective Frame to be resized.
+## IconTexture: Interface/Addons/MovableObjectiveFrame/MovableObjectiveFrame.blp
 ## Author: Keyboardturn
-## Version: 0.0.6
+## Version: 0.0.7
 ## SavedVariables: MofDB
 
 MovableObjectiveFrame.lua

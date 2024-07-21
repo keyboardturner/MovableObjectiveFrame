@@ -17,7 +17,7 @@ ObjTrackerOptionsPanelVersion:SetFont(ObjTrackerOptionsPanelVersion:GetFont(), 1
 ObjTrackerOptionsPanelVersion:SetTextColor(1,1,1,1);
 ObjTrackerOptionsPanelVersion:ClearAllPoints();
 ObjTrackerOptionsPanelVersion:SetPoint("TOPLEFT", ObjTrackerOptionsPanel, "TOPLEFT",400,-21);
-ObjTrackerOptionsPanelVersion:SetText("Version: " .. GetAddOnMetadata("MovableObjectiveFrame", "Version"));
+ObjTrackerOptionsPanelVersion:SetText("Version: " .. C_AddOns.GetAddOnMetadata("MovableObjectiveFrame", "Version"));
 
 local ObjTrackerScaleSlider = CreateFrame("Slider", "ObjTrackScaleSlider", ObjTrackerOptionsPanel, "OptionsSliderTemplate");
 ObjTrackerScaleSlider:SetWidth(300);
@@ -35,7 +35,9 @@ ObjTrackerScaleSlider:SetScript("OnValueChanged", function()
 	ObjectiveTrackerFrame:SetScale(scaleValue);
 end)
 
-InterfaceOptions_AddCategory(ObjTrackerOptionsPanel);
+local category, layout = Settings.RegisterCanvasLayoutCategory(ObjTrackerOptionsPanel, ObjTrackerOptionsPanel.name, ObjTrackerOptionsPanel.name);
+category.ID = ObjTrackerOptionsPanel.name;
+Settings.RegisterAddOnCategory(category)
 
 
 local ObjTrackerEventFrame = CreateFrame("Frame");

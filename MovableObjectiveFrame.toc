@@ -1,4 +1,4 @@
-## Interface: 110207, 120000
+## Interface: 120000, 120001
 ## Title: Movable Objectives Frame
 ## Notes: Allows the Objective Frame to be resized.
 ## IconTexture: Interface/Addons/MovableObjectiveFrame/MovableObjectiveFrame.blp
